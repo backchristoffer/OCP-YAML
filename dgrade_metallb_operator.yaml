@@ -1,6 +1,7 @@
 # oc apply -f dgrade_metallb_operator.yaml
 # oc get installplan -n metallb-system
-# oc approve installplan <install-plan-name> -n metallb-system
+# oc patch installplan <install-plan-name> -n metallb-system --type merge -p '{"spec":{"approved":true}}'
+
 apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription
 metadata:
