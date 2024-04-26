@@ -11,6 +11,6 @@ spec:
   channel: stable
   installPlanApproval: Manual 
   name: metallb-operator
-  source: redhat-operators
+  source: metallb-system
   sourceNamespace: openshift-marketplace
   startingCSV: metallb-operator.4.12.0.202401291234
